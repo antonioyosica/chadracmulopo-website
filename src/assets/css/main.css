@@ -1,0 +1,54 @@
+@font-face{font-family:"Unbounded";font-style:normal;font-weight:400;src:url('../fonts/Unbounded-Light.woff2') format('woff2'), url('../fonts/Unbounded-Light.woff') format('woff');font-display:swap;}
+@font-face{font-family:"Unbounded";font-style:normal;font-weight:500;src:url('../fonts/Unbounded-Medium.woff2') format('woff2'), url('../fonts/Unbounded-Medium.woff') format('woff');font-display:swap;}
+@font-face{font-family:"Unbounded";font-style:normal;font-weight:700;src:url('../fonts/Unbounded-Bold.woff2') format('woff2'), url('../fonts/Unbounded-Bold.woff') format('woff');font-display:swap;}
+* {
+    outline: none !important;
+}
+*::-webkit-scrollbar {
+    width: 0.4em
+}
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.00)
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.1);
+    outline: 1px solid slategrey
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Unbounded", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #222020;
+}
+.navbar-brand {
+    display: table;
+    color: #ffffff;
+}
+.navbar-brand:hover {
+    color: #ffffff;
+}
+.navbar-brand span {
+    display: table-cell;
+    vertical-align: middle;
+}
+.navbar-brand span strong {
+    font-weight: 700;
+    color: #8950f1;
+}
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+.footer p {
+    font-size: 0.82em;
+}
+.footer a:hover {
+    color: #ffffff !important;
+}

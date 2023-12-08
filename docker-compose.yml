@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  chadracmulopo-website:
+    container_name: chadracmulopo-website
+    restart: unless-stopped
+    build:
+      context: ./
+      dockerfile: ./config/Dockerfile
+    image: chadracmulopo/website:latest
+    ports:
+      - 3000:3010
+    networks:
+      - nginx-proxymanager_default
+networks:
+  nginx-proxymanager_default:
+    external: true
