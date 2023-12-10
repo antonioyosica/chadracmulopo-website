@@ -11,61 +11,119 @@ useHead({
 </script>
 
 <template>
-  <div class="container-fluid">
-    <div class="row align-items-start">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <NuxtLink to="/" class="navbar-brand">
-            <img src="../assets/img/logo.webp" alt="Chadrac Mulopo" width="38" height="39" class="d-inline-block align-text-top me-2">
-            <span><strong>Chadrac</strong> Mulopo</span>
-          </NuxtLink>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <NuxtLink to="/sobre" class="nav-link">
-                  Sobre Mim
-                </NuxtLink>
-              </li>
-              <li class="nav-item ms-3">
-                <NuxtLink to="/blog" class="nav-link">
-                  Blog
-                </NuxtLink>
-              </li>
-              <li class="nav-item ms-3">
-                <NuxtLink to="/contacto" class="nav-link">
-                  Contacto
-                </NuxtLink>
-              </li>
-            </ul>
-          </div>
+  <main class="my-4">
+    <div class="container-fluid">
+      <div class="col-12 col-sm-12 col-md-6">
+        <div class="home-card1">
+          <a href="#">Conheça os<br />meus <strong>trabalho</strong></a>
         </div>
-      </nav>
-    </div>
-    <div class="row align-items-center">
-      <div class="col-sm-3">
-        Level 1: .col-sm-3
       </div>
-      <div class="col-sm-9">
+      <div class="col-12 col-sm-12 col-md-6">
         <div class="row">
-          <div class="col-8 col-sm-6">
-            Level 2: .col-8 .col-sm-6
+          <div class="col-12">
+            <div class="home-card2">
+              <a href="#">Meu <strong>blog</strong></a>
+            </div>
           </div>
-          <div class="col-4 col-sm-6">
-            Level 2: .col-4 .col-sm-6
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 pe-lg-0">
+            <div class="home-card3">
+              <a href="#">Sobre <strong>mim</strong></a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 ps-lg-0">
+            <div class="home-card4">
+              <a href="#">Entre em<br /><strong>contacto</strong></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row align-items-end">
-      <footer class="footer mt-auto py-3">
-        <div class="container text-center">
-          <p class="text-muted m-0">&copy; {{ new Date().getFullYear() }}. Todos os direitos reservados.</p>
-          <p class="text-muted">Desenvolvido por <a class="font-bold text-muted" href="https://antonioyosica.com/">António Yosica</a></p>
-        </div>
-      </footer>
-    </div>
-  </div>
+  </main>
 </template>
+
+<style>
+main .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .container-fluid .home-card1 {
+  min-height: 216px;
+  background-color: #F20C1F;
+  margin-bottom: 20px;
+}
+
+main .container-fluid .home-card2 {
+  min-height: 216px;
+  background-color: #F2CD5E;
+  margin-bottom: 20px;
+}
+
+main .container-fluid .home-card3 {
+  min-height: 216px;
+  background-color: #8950f1;
+  margin-bottom: 20px;
+}
+
+main .container-fluid .home-card4 {
+  min-height: 216px;
+  background-color: #8950f1;
+}
+main .container-fluid .home-card1,
+main .container-fluid .home-card2,
+main .container-fluid .home-card3,
+main .container-fluid .home-card4 {
+  border-radius: 26px;
+  padding: 22px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+}
+main .container-fluid .home-card2 a {
+  color: #222020;
+}
+main .container-fluid .home-card1 a,
+main .container-fluid .home-card3 a,
+main .container-fluid .home-card4 a {
+  color: #ffffff;
+}
+main .container-fluid .home-card2 a,
+main .container-fluid .home-card1 a,
+main .container-fluid .home-card3 a,
+main .container-fluid .home-card4 a {
+  font-size: 1em;
+  line-height: 1.2 !important;
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  main .container-fluid .home-card2 a,
+  main .container-fluid .home-card1 a,
+  main .container-fluid .home-card3 a,
+  main .container-fluid .home-card4 a {
+    font-size: 1.4em;
+  }
+  main .container-fluid .home-card1 {
+    min-height: 540px;
+    margin: 0 20px 0 0 !important;
+  }
+  main .container-fluid .home-card2 {
+    min-height: 260px;
+    margin: 0 0 20px 0 !important;
+  }
+  main .container-fluid .home-card3 {
+    min-height: 260px;
+    margin: 0 21px 0 0 !important;
+  }
+  main .container-fluid .home-card4 {
+    min-height: 260px;
+  }
+  main .container-fluid .home-card1,
+  main .container-fluid .home-card2,
+  main .container-fluid .home-card3,
+  main .container-fluid .home-card4 {
+    padding: 36px;
+  }
+}
+</style>

@@ -1,8 +1,14 @@
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+  <div class="container-fluid">
+    <div class="row align-items-start">
+      <LazyHeader />
+    </div>
+    <div class="row align-items-center">
+      <LazyNuxtPage />
+    </div>
+    <div class="row align-items-end">
+      <LazyFooter />
+    </div>
   </div>
 </template>
 
@@ -63,3 +69,15 @@ useHead({
 onMounted(() => {
 });
 </script>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>
