@@ -6,7 +6,7 @@ RUN mkdir -p /usr/src/chadracmulopo-website
 WORKDIR /usr/src/chadracmulopo-website
 
 # copy the app, note .dockerignore
-COPY . .
+COPY src /usr/src/chadracmulopo-website
 RUN npm install
 RUN npm run build
 
