@@ -13,30 +13,20 @@ useHead({
 <template>
   <main class="my-4">
     <div class="container-fluid">
-      <div class="col-12 col-sm-12 col-md-6">
+      <div class="col-12 col-sm-12 col-md-5">
         <div class="home-card1">
-          <a href="#">Conheça os<br />meus <strong>trabalho</strong></a>
+          <h1>Motion Design</h1>
+          <span>Apaixonado pela animação aplicada à publicidade e branding.</span>
         </div>
       </div>
-      <div class="col-12 col-sm-12 col-md-6">
-        <div class="row">
-          <div class="col-12">
-            <div class="home-card2">
-              <a href="#">Meu <strong>blog</strong></a>
-            </div>
-          </div>
+      <div class="col-12 col-sm-12 col-md-3 about">
+        <div class="home-card2">
+          <a href="#">Sobre&nbsp;<strong>mim</strong></a>
         </div>
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 pe-lg-0">
-            <div class="home-card3">
-              <a href="#">Sobre <strong>mim</strong></a>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 ps-lg-0">
-            <div class="home-card4">
-              <a href="#">Entre em<br /><strong>contacto</strong></a>
-            </div>
-          </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 work">
+        <div class="home-card3">
+          <a href="#">Meus&nbsp;<strong>trabalhos</strong></a>
         </div>
       </div>
     </div>
@@ -48,82 +38,104 @@ main .container-fluid {
   display: flex;
   flex-wrap: wrap;
 }
-main .container-fluid .home-card1 {
-  min-height: 216px;
-  background-color: #F20C1F;
+main .container-fluid .about,
+main .container-fluid .work {
+  min-height: 256px;
   margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 26px;
 }
-
 main .container-fluid .home-card2 {
-  min-height: 216px;
-  background-color: #F2CD5E;
-  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/img/chadrac-mulopo-md.webp");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 125%;
+  transition: transform 0.5s ease-in-out;
 }
-
+main .container-fluid .home-card2:hover {
+  transform: scale(1.3);
+}
 main .container-fluid .home-card3 {
-  min-height: 216px;
-  background-color: #8950f1;
-  margin-bottom: 20px;
-}
-
-main .container-fluid .home-card4 {
-  min-height: 216px;
-  background-color: #8950f1;
+  width: 100%;
+  height: 100%;
+  background-color: #252525;
 }
 main .container-fluid .home-card1,
 main .container-fluid .home-card2,
-main .container-fluid .home-card3,
-main .container-fluid .home-card4 {
+main .container-fluid .home-card3 {
   border-radius: 26px;
+  display: flex;
+}
+main .container-fluid .home-card1 {
+  min-height: 256px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding-top: 0;
+  align-items: normal;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+main .container-fluid .home-card1 h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main .container-fluid .home-card1 span {
+  font-size: 1.4em;
+  line-height: 1.3 !important;
+}
+main .container-fluid .home-card2 a,
+main .container-fluid .home-card3 a{
+  font-size: 0.9em;
+  line-height: 1.3 !important;
+  text-decoration: none;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
   padding: 22px;
   display: flex;
   align-items: flex-end;
-  justify-content: left;
-}
-main .container-fluid .home-card2 a {
-  color: #222020;
-}
-main .container-fluid .home-card1 a,
-main .container-fluid .home-card3 a,
-main .container-fluid .home-card4 a {
-  color: #ffffff;
-}
-main .container-fluid .home-card2 a,
-main .container-fluid .home-card1 a,
-main .container-fluid .home-card3 a,
-main .container-fluid .home-card4 a {
-  font-size: 1em;
-  line-height: 1.2 !important;
-  text-decoration: none;
+  justify-content: center;
 }
 
 @media (min-width: 992px) {
-  main .container-fluid .home-card2 a,
-  main .container-fluid .home-card1 a,
-  main .container-fluid .home-card3 a,
-  main .container-fluid .home-card4 a {
-    font-size: 1.4em;
+  main .container-fluid .home-card1 span {
+    font-size: 1.6em;
   }
+  main .container-fluid .home-card2 a,
+  main .container-fluid .home-card3 a{
+    font-size: 1em;
+    padding: 36px;
+  }
+  main .container-fluid .home-card2 a {
+    align-items: flex-end;
+    justify-content: left;
+  }
+  main .container-fluid .home-card3 a {
+    align-items: flex-end;
+    justify-content: right;
+  }
+  main .container-fluid .work,
+  main .container-fluid .about,
   main .container-fluid .home-card1 {
-    min-height: 540px;
-    margin: 0 20px 0 0 !important;
+    min-height: 512px;
+  }
+  main .container-fluid .work {
+    padding-left: 20px!important;
   }
   main .container-fluid .home-card2 {
-    min-height: 260px;
-    margin: 0 0 20px 0 !important;
+    background-image: url("../assets/img/chadrac-mulopo-xs.webp");
+    background-position: center;
+    background-size: 100% 100%;
   }
-  main .container-fluid .home-card3 {
-    min-height: 260px;
-    margin: 0 21px 0 0 !important;
-  }
-  main .container-fluid .home-card4 {
-    min-height: 260px;
-  }
-  main .container-fluid .home-card1,
-  main .container-fluid .home-card2,
-  main .container-fluid .home-card3,
-  main .container-fluid .home-card4 {
-    padding: 36px;
+  main .container-fluid .home-card1 {
+    margin: 0 20px 0 0 !important;
+    padding-top: 125px !important;
+    justify-content: left;
+    text-align: left;
   }
 }
 </style>
