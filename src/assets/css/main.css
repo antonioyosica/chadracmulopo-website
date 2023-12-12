@@ -41,6 +41,11 @@ body {
     font-weight: 700;
     color: #8950f1;
 }
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.12rem;
+    }
+}
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.8) !important;
 }
