@@ -31,10 +31,10 @@ const route = useRoute();
           </li>
           <li class="nav-item ms-lg-5">
             <ul class="social-icons">
-              <li class="nav-item"><a class="nav-link facebook" href="#" target="_blank"></a></li>
-              <li class="nav-item"><a class="nav-link instagram" href="#" target="_blank"></a></li>
-              <li class="nav-item"><a class="nav-link linkedin" href="#" target="_blank"></a></li>
-              <li class="nav-item"><a class="nav-link behance" href="#" target="_blank"></a></li>
+              <!-- <li class="nav-item"><a class="nav-link facebook" href="#" target="_blank"></a></li> -->
+              <li class="nav-item"><a class="nav-link linkedin" href="https://www.linkedin.com/in/chadrac-mulopo/" target="_blank"></a></li>
+              <li class="nav-item"><a class="nav-link instagram" href="https://www.instagram.com/chadrac_mulopo/" target="_blank"></a></li>
+              <li class="nav-item"><a class="nav-link behance" href="https://www.behance.net/chadracmulopo" target="_blank"></a></li>
             </ul>
           </li>
         </ul>

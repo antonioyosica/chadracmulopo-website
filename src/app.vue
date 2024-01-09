@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row align-items-start">
-      <LazyHeader />
+      <Header />
     </div>
     <div class="row align-items-center">
       <LazyNuxtPage />
@@ -80,4 +80,8 @@ onMounted(() => {
   opacity: 0;
   filter: blur(1rem);
 }
+/* .home footer {
+  position: fixed;
+  bottom: 0;
+} */
 </style>

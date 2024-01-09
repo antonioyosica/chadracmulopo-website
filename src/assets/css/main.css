@@ -3,6 +3,7 @@
 @font-face{font-family:"Unbounded";font-style:normal;font-weight:700;src:url('../fonts/Unbounded-Bold.woff2') format('woff2'), url('../fonts/Unbounded-Bold.woff') format('woff');font-display:swap;}
 * {
     outline: none !important;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="silver"><circle cx="12" cy="12" r="10"/></svg>'), auto !important; /* indigo */
 }
 *::-webkit-scrollbar {
     width: 0.4em
@@ -45,15 +46,16 @@ body {
     .navbar-brand {
         font-size: 1.12rem;
     }
+
+    .social-icons {
+        margin-top: 15px;
+    }
 }
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.8) !important;
 }
 .navbar-nav .nav-link:hover,
-main .container-fluid .home-card2 a:hover,
-main .container-fluid .home-card1 a:hover,
-main .container-fluid .home-card3 a:hover,
-main .container-fluid .home-card4 a:hover,
+main .container-fluid a:hover,
 .navbar-dark .navbar-nav .nav-link.router-link-exact-active {
     text-decoration: underline;
 }
