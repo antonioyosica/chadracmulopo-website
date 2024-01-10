@@ -2,7 +2,30 @@
 useHead({
   title: 'Chadrac Mulopo – Motion Designer',
   meta: [
-    { name: 'description', content: '-' }
+    { name: 'description', content: 'Explore e descubra narrativas visuais envolventes e inovadoras que elevam marcas a novas alturas. Chadrac Mulopo, Motion Designer.' },
+    { name: 'keywords', content: 'chadrac mulopo, motion designer, animação publicitária, narrativas visuais, animação criativa, experiências visuais memoráveis' },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'og:title', content: 'Chadrac Mulopo – Motion Designer' },
+    { name: 'og:description', content: 'Explore e descubra narrativas visuais envolventes e inovadoras que elevam marcas a novas alturas. Chadrac Mulopo, Motion Designer.' },
+    { name: 'og:type', content: 'website' },
+    { name: 'og:image', content: 'https://static1storage.s3.eu-west-2.amazonaws.com/vbox/chadracmulopo/chadrac-mulopo-motion-designer.sm.png' },
+    { name: 'og:image:width', content: '947' },
+    { name: 'og:image:height', content: '548' },
+    { name: 'og:image:type', content: 'image/png' },
+    { name: 'og:url', content: 'https://chadracmulopo.com/' },
+    { name: 'og:locale', content: 'pt_AO' },
+    { name: 'og:site_name', content: 'Chadrac Mulopo' },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: 'Chadrac Mulopo – Motion Designer' },
+    { name: 'twitter:description', content: 'Explore e descubra narrativas visuais envolventes e inovadoras que elevam marcas a novas alturas. Chadrac Mulopo, Motion Designer.' },
+    { name: 'twitter:image', content: 'https://static1storage.s3.eu-west-2.amazonaws.com/vbox/chadracmulopo/chadrac-mulopo-motion-designer.sm.png' },
+    { name: 'twitter:image:alt', content: 'Chadrac Mulopo – Motion Designer' },
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://chadracmulopo.com/'
+    }
   ],
   bodyAttrs: {
     class: 'home'
@@ -22,7 +45,7 @@ useHead({
       <div class="col-12 col-sm-12 col-md-2 about">
         <NuxtLink to="/sobre">Sobre&nbsp;<strong>mim</strong></NuxtLink>
       </div>
-      <div class="col-12 col-sm-12 col-md-5 work">
+      <div class="col-12 col-sm-12 col-md-5m work">
         <NuxtLink to="/trabalho">Meus&nbsp;<strong>trabalhos</strong></NuxtLink>
       </div>
     </div>
@@ -75,20 +98,13 @@ main .container-fluid .work a:before {
   height: 100%;
   background-color: #252525;
   z-index: -1;
-  transition: transform 0.5s ease-in-out;
 }
 main .container-fluid .about a:hover:before {
   transform: scale(1.3);
 }
-main .container-fluid .home-card3 {
-  width: 100%;
-  height: 100%;
-  background-color: #252525;
-}
 main .container-fluid .home-card1,
 main .container-fluid .about a,
 main .container-fluid .work a {
-  border-radius: 26px;
   display: flex;
 }
 main .container-fluid .home-card1 {
@@ -152,7 +168,7 @@ main .container-fluid a:hover{
     min-height: 512px;
   }
   main .container-fluid .work {
-    padding-left: 20px!important;
+    margin-left: 30px!important;
   }
   main .container-fluid .about a:before {
     background-image: url("../assets/img/chadrac-mulopo-xs.webp");

@@ -16,6 +16,9 @@
 import { onMounted } from 'vue';
 
 useHead({
+  htmlAttrs: {
+    lang: 'pt-AO'
+  },
   meta: [
     { name: 'author', content: 'António Yosica' },
     { name: 'msapplication-TileColor', content: '#8950f1' },
