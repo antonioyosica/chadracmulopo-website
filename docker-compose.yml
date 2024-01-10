@@ -8,7 +8,7 @@ services:
       dockerfile: ./config/Dockerfile
     image: antonioyosica/chadracmulopo:latest
     ports:
-      - 3010:3000
+      - 3050:3000
     networks:
       - nginx-proxymanager_default
 networks:
