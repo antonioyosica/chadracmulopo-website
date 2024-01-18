@@ -9,7 +9,7 @@ const route = useRoute();
         <img src="../assets/img/logo.webp" alt="Chadrac Mulopo" width="38" height="38" class="d-inline-block align-text-top me-2">
         <span><strong>Chadrac</strong> Mulopo</span>
       </NuxtLink>
-      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar">

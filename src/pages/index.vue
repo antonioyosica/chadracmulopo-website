@@ -9,8 +9,8 @@ useHead({
     { name: 'og:description', content: 'Explore e descubra narrativas visuais envolventes e inovadoras que elevam marcas a novas alturas. Chadrac Mulopo, Motion Designer.' },
     { name: 'og:type', content: 'website' },
     { name: 'og:image', content: 'https://static1storage.s3.eu-west-2.amazonaws.com/vbox/chadracmulopo/chadrac-mulopo-motion-designer.sm.png' },
-    { name: 'og:image:width', content: '947' },
-    { name: 'og:image:height', content: '548' },
+    { name: 'og:image:width', content: '1089' },
+    { name: 'og:image:height', content: '630' },
     { name: 'og:image:type', content: 'image/png' },
     { name: 'og:url', content: 'https://chadracmulopo.com/' },
     { name: 'og:locale', content: 'pt_AO' },
@@ -36,13 +36,13 @@ useHead({
 <template>
   <main class="my-4">
     <div class="container-fluid">
-      <div class="col-12 col-sm-12 col-md-5">
+      <div class="col-12 col-sm-12 col-md-4">
         <div class="home-card1">
           <h1>Motion<br />Designer</h1>
           <span>Apaixonado pela animação aplicada à publicidade e branding.</span>
         </div>
       </div>
-      <div class="col-12 col-sm-12 col-md-2 about">
+      <div class="col-12 col-sm-12 col-md-3 about">
         <NuxtLink to="/sobre">Sobre&nbsp;<strong>mim</strong></NuxtLink>
       </div>
       <div class="col-12 col-sm-12 col-md-5m work">
@@ -144,7 +144,7 @@ main .container-fluid a:hover{
 
 @media (min-width: 992px) {
   main .container-fluid .home-card1 h1 {
-    font-size: 3.6em;
+    font-size: 3.8em;
   }
   main .container-fluid .home-card1 span {
     font-size: 1.6em;
@@ -173,11 +173,11 @@ main .container-fluid a:hover{
   main .container-fluid .about a:before {
     background-image: url("../assets/img/chadrac-mulopo-xs.webp");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 100% 110%;
   }
   main .container-fluid .home-card1 {
     margin: 0 20px 0 0 !important;
-    padding: 32px 64px 0 !important;
+    padding: 32px 60px 0 !important;
     text-align: left;
   }
 }
