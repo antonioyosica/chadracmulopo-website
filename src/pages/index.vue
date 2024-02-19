@@ -36,7 +36,7 @@ useHead({
 <template>
   <main class="my-4">
     <div class="container-fluid">
-      <div class="col-12 col-sm-12 col-md-4">
+      <div class="col-12 col-sm-12 col-md-5">
         <div class="home-card1">
           <h1>Motion<br />Designer</h1>
           <span>Apaixonado pela animação aplicada à publicidade e branding.</span>
@@ -45,7 +45,7 @@ useHead({
       <div class="col-12 col-sm-12 col-md-3 about">
         <NuxtLink to="/sobre">Sobre&nbsp;<strong>mim</strong></NuxtLink>
       </div>
-      <div class="col-12 col-sm-12 col-md-5m work">
+      <div class="col-12 col-sm-12 col-md-4m work">
         <NuxtLink to="/trabalho">Meus&nbsp;<strong>trabalhos</strong></NuxtLink>
       </div>
     </div>
@@ -120,7 +120,7 @@ main .container-fluid .home-card1 {
 main .container-fluid .home-card1 h1 {
   font-weight: 700;
   margin-bottom: 20px;
-  font-size: 32px;
+  font-size: 38px;
 }
 main .container-fluid .home-card1 span {
   font-size: 1.4em;
@@ -144,7 +144,7 @@ main .container-fluid a:hover{
 
 @media (min-width: 992px) {
   main .container-fluid .home-card1 h1 {
-    font-size: 3.8em;
+    font-size: 4.534em;
   }
   main .container-fluid .home-card1 span {
     font-size: 1.6em;

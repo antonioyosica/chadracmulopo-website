@@ -1,3 +1,5 @@
+import viteCompression from 'vite-plugin-compression';
+
 export default defineNuxtConfig({
     vite: {
         server: {
@@ -6,6 +8,9 @@ export default defineNuxtConfig({
                 port: 3000
             }
         }
+    },
+    nitro: {
+        compressPublicAssets: true,
     },
     app: {
         pageTransition: { name: 'page', mode: 'out-in' },

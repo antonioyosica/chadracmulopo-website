@@ -43,14 +43,14 @@ body {
     color: #8950f1;
 }
 @media (min-width: 768px) {
-    .col-md-5m {
+    .col-md-4m {
         flex: 0 0 auto;
-        width: 35.66666667%;
+        width: 30.66666667%;
     }
 }
 @media (max-width: 767px) {
     .navbar-brand {
-        font-size: 1rem;
+        font-size: .81rem;
     }
 
     .social-icons {
