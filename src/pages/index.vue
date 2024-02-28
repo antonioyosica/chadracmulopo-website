@@ -52,7 +52,7 @@ useHead({
   </main>
 </template>
 
-<style>
+<style scoped>
 main .container-fluid {
   display: flex;
   flex-wrap: wrap;

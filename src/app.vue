@@ -20,6 +20,7 @@ useHead({
     lang: 'pt-AO'
   },
   meta: [
+    { name: 'google', content: 'notranslate' },
     { name: 'author', content: 'António Yosica' },
     { name: 'msapplication-TileColor', content: '#8950f1' },
     { name: 'theme-color', content: '#8950f1' }
