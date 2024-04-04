@@ -63,7 +63,6 @@ main .container-fluid .row .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 26px !important;
 }
 
 main .container-fluid .row .image {
@@ -72,6 +71,7 @@ main .container-fluid .row .image {
 }
 
 main .container-fluid .row .content {
+
 }
 main .container-fluid .row .content h1 {
   display: none;
@@ -87,6 +87,7 @@ main .container-fluid .row .content h1 {
     margin-bottom: 0;
   }
   main .container-fluid .row .content {
+    padding-left: 30px;
   }
   main .container-fluid .row .content h1 {
     display: block;
