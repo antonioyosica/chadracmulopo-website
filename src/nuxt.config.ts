@@ -1,5 +1,3 @@
-import viteCompression from 'vite-plugin-compression';
-
 export default defineNuxtConfig({
     vite: {
         server: {
@@ -27,7 +25,7 @@ export default defineNuxtConfig({
         hostname: 'https://chadracmulopo.com',
         gzip: true,
         defaults: {
-            changefreq: 'daily',
+            changefreq: 'monthly',
             priority: 1,
             lastmod: new Date().toISOString(),
         },

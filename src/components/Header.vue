@@ -6,7 +6,7 @@ const route = useRoute();
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <NuxtLink to="/" class="navbar-brand">
-        <img src="../assets/img/logo.webp" alt="Chadrac Mulopo" width="38" height="38" class="d-inline-block align-text-top me-2">
+        <img src="../assets/img/chadracmulopo-logo-white-xs.webp" alt="Chadrac Mulopo" width="38" height="38" class="d-inline-block align-text-top me-2">
         <span><strong>Chadrac</strong> Mulopo</span>
       </NuxtLink>
       <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,13 +20,18 @@ const route = useRoute();
             </NuxtLink>
           </li>
           <li class="nav-item ms-3" v-if="route.name !== 'index'">
-            <NuxtLink to="/blog" class="nav-link">
-              Blog
+            <NuxtLink to="/trabalho" class="nav-link">
+              Trabalhos
             </NuxtLink>
           </li>
           <li class="nav-item ms-3" v-if="route.name !== 'index'">
             <NuxtLink to="/contacto" class="nav-link">
               Contacto
+            </NuxtLink>
+          </li>
+          <li class="nav-item ms-3" v-if="route.name !== 'index'">
+            <NuxtLink to="/blog" class="nav-link">
+              Blog
             </NuxtLink>
           </li>
           <li class="nav-item ms-lg-5">
