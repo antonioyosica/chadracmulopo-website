@@ -18,9 +18,7 @@ export default defineNuxtConfig({
         }
     },
     css: ['~/assets/css/main.css'],
-    modules: [
-        '@nuxtjs/sitemap'
-    ],
+    modules: ['@nuxtjs/sitemap'],
     sitemap: {
         hostname: 'https://chadracmulopo.com',
         gzip: true,
@@ -32,14 +30,11 @@ export default defineNuxtConfig({
         routes: [
             '/',
             '/sobre',
+            '/trabalho',
             '/contacto',
+            '/blog'
         ]
     },
+    plugins: [
+    ],
 })
-
-
-
-
-
-
-

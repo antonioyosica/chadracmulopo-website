@@ -44,8 +44,8 @@ useHead({
   <main class="my-4">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-12 p-5">
-          <div class="d-flex mb-3 flex-column">
+        <div class="col-lg-8 col-md-12 p-3">
+          <div class="d-flex mb-3 flex-column title-description">
             <h1 class="mb-4">Vamos Criar Juntos<br><span class="h3">Entre em Contacto</span></h1>
             <!-- <div class="d-flex flex-wrap">
               <div class="
@@ -113,7 +113,7 @@ useHead({
                 <span class="opacity-50 d-flex align-items-center me-3 fs-2">
                   <ion-icon name="call"></ion-icon>
                 </span>
-                <span class="d-flex phones-number"><a href="tel:" class="">(+244) 9xx xxx xxx</a><a href="tel:" class="">(+244) 9xx xxx xxx</a></span>
+                <span class="d-flex phones-number"><a href="tel:" class="">(+244) 958 410 186</a><a href="tel:" class="">(+244) 991 418 871</a></span>
               </li>
             </ul>
           </div>
@@ -133,7 +133,6 @@ textarea {
   background: transparent;
   outline: none;
   width: 100%;
-  text-transform: capitalize;
   padding: 1rem 0.4rem;
   color: #ffffff;
 }
@@ -152,7 +151,7 @@ textarea::placeholder {
       #7b68ee,
       #672ad7
   );
-  animation: animateClr 5s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
+  animation: animateClr 4s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99);
   background-size: 400%;
 }
 
@@ -189,5 +188,10 @@ ion-icon {
 }
 button{
   background-color: #A6A6A6;
+}
+@media (min-width: 992px) {
+  form {
+    padding-right: 55px !important;
+  }
 }
 </style>

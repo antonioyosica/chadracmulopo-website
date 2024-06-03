@@ -44,7 +44,7 @@ useHead({
           <h1>Quem Sou?</h1>
           <p>
             Olá! <br />
-            Chamo-me <strong>Chadrac Mulopo</strong>, actuo no mercado há mais de meia década. Já entreguei projectos para diversas plataformas, sempre unindo tecnologia e criatividade com um acabamento impecável.
+            Chamo-me <strong style="text-decoration: underline;">Chadrac Mulopo</strong>, actuo no mercado há mais de meia década. Já entreguei projectos para diversas plataformas, sempre unindo tecnologia e criatividade com um acabamento impecável.
           </p>
           <p>
             Actualmente, actuo como consultor criativo independente, trabalhando em parceria com empresas de modo a construir narrativas através da animação que resultam em crescimento na audiência, assim gerando conexão com o publico, criando animações de publicidade e branding, e gerando resultados incríveis através das mais diversas plataformas.
