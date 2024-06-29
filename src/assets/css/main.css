@@ -50,7 +50,7 @@ body {
 }
 @media (max-width: 767px) {
     .navbar-brand {
-        font-size: .81rem;
+        font-size: .93rem;
     }
 
     .social-icons {
@@ -123,7 +123,12 @@ button.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer a:hover {
     color: #ffffff !important;
 }
-
+@media (max-width: 991px) {
+    nav.navbar > div.container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
 @media (min-width: 992px) {
     .social-icons {
         width: 182px;

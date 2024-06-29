@@ -82,10 +82,10 @@ main .container-fluid .about a:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/img/chadrac-mulopo-md.webp");
+  background-image: url("../assets/img/chadrac-mulopo-xs.webp");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100% 125%;
+  background-size: 100% 135%;
   z-index: -1;
   transition: transform 0.5s ease-in-out;
 }
@@ -173,7 +173,7 @@ main .container-fluid a:hover{
   main .container-fluid .about a:before {
     background-image: url("../assets/img/chadrac-mulopo-xs.webp");
     background-position: center;
-    background-size: 100% 110%;
+    background-size: cover;
   }
   main .container-fluid .home-card1 {
     margin: 0 20px 0 0 !important;

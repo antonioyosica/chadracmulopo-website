@@ -37,10 +37,10 @@ useHead({
   <main class="my-4">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-md-4 image">
+        <div class="col-12 col-md-6 image">
           <img src="../assets/img/chadrac-mulopo-md.webp" alt="Chadrac Mulopo, o Motion Designer" class="">
         </div>
-        <div class="col-12 col-md-8 content">
+        <div class="col-12 col-md-6 content">
           <h1>Quem Sou?</h1>
           <p>
             Olá! <br />
@@ -60,13 +60,11 @@ useHead({
 
 <style scoped>
 main .container-fluid .row .image img {
-  height: 100%;
-  width: 100%;
   object-fit: cover;
 }
 
 main .container-fluid .row .image {
-  min-height: 256px;
+  min-height: 460px;
   margin-bottom: 30px;
 }
 
@@ -76,13 +74,21 @@ main .container-fluid .row .content {
 main .container-fluid .row .content h1 {
   display: none;
 }
+@media (max-width: 991px) {
+  main.my-4 {
+    margin-top: 0 !important;
+  }
+  main.my-4 > div.container-fluid {
+    padding-right: 0 !important;
+  }
+}
 @media (min-width: 992px) {
   main .container-fluid .row {
     padding: 16px 60px 0 !important;
     text-align: left;
   }
   main .container-fluid .row .image {
-    min-height: 512px;
+    min-height: 620px;
     padding-right: 30px;
     margin-bottom: 0;
   }
@@ -93,5 +99,37 @@ main .container-fluid .row .content h1 {
     display: block;
     margin-bottom: 30px;
   }
+}
+
+main.my-4 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+main.my-4 > div.container-fluid {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+main.my-4 > div.container-fluid > div.row
+{
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+main.my-4 > div.container-fluid > div.row > div.image {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+main.my-4 > div.container-fluid > div.row > div.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
 }
 </style>
