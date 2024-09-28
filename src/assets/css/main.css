@@ -38,10 +38,10 @@ body {
     vertical-align: middle;
     font-weight: 700;
 }
-.navbar-brand span strong {
+/* .navbar-brand span strong {
     font-weight: 700;
     color: #8950f1;
-}
+} */
 @media (min-width: 768px) {
     .col-md-4m {
         flex: 0 0 auto;

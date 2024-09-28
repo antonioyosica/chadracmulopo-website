@@ -6,7 +6,7 @@ const route = useRoute();
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <NuxtLink to="/" class="navbar-brand">
-        <img src="../assets/img/chadracmulopo-logo-white-xs.webp" alt="Chadrac Mulopo" width="38" height="38" class="d-inline-block align-text-top me-2">
+        <img src="https://s3.eu-west-2.amazonaws.com/s3.box/antonioyosica/chadracmulopo/img/chadracmulopo-logo-white-xs.webp" alt="Chadrac Mulopo" width="38" height="38" class="d-inline-block align-text-top me-2">
         <span><strong>Chadrac</strong> Mulopo</span>
       </NuxtLink>
       <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">

@@ -38,7 +38,7 @@ useHead({
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-md-6 image">
-          <img src="../assets/img/chadrac-mulopo-md.webp" alt="Chadrac Mulopo, o Motion Designer" class="">
+          <img src="https://s3.eu-west-2.amazonaws.com/s3.box/antonioyosica/chadracmulopo/img/chadrac-mulopo-md-noBg.webp" alt="Chadrac Mulopo, o Motion Designer">
         </div>
         <div class="col-12 col-md-6 content">
           <h1>Quem Sou?</h1>
@@ -68,9 +68,6 @@ main .container-fluid .row .image {
   margin-bottom: 30px;
 }
 
-main .container-fluid .row .content {
-
-}
 main .container-fluid .row .content h1 {
   display: none;
 }
@@ -80,6 +77,11 @@ main .container-fluid .row .content h1 {
   }
   main.my-4 > div.container-fluid {
     padding-right: 0 !important;
+  }
+  main.my-4 > div.container-fluid > div.row > div.image img {
+    left: 0;
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 992px) {
@@ -98,6 +100,12 @@ main .container-fluid .row .content h1 {
   main .container-fluid .row .content h1 {
     display: block;
     margin-bottom: 30px;
+  }
+  main.my-4 > div.container-fluid > div.row > div.image img {
+    top: 0;
+    left: 16.5% !important;
+    right: auto;
+    width: 67%;
   }
 }
 
@@ -122,14 +130,11 @@ main.my-4 > div.container-fluid > div.row > div.image {
   padding: 0;
   position: relative;
   overflow: hidden;
+  background-color: #DAD8D8;
 }
 
 main.my-4 > div.container-fluid > div.row > div.image img {
   position: absolute;
-  top: 0;
-  left: 0;
   bottom: 0;
-  width: 100%;
-  height: auto;
 }
 </style>

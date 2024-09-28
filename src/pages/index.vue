@@ -8,7 +8,7 @@ useHead({
     { name: 'og:title', content: 'Chadrac Mulopo – Motion Designer' },
     { name: 'og:description', content: 'Explore e descubra narrativas visuais envolventes e inovadoras que elevam marcas a novas alturas. Chadrac Mulopo, Motion Designer.' },
     { name: 'og:type', content: 'website' },
-    { name: 'og:image', content: 'https://static1storage.s3.eu-west-2.amazonaws.com/vbox/chadracmulopo/chadrac-mulopo-motion-designer.sm.png' },
+    { name: 'og:image', content: 'https://s3.eu-west-2.amazonaws.com/s3.box/antonioyosica/chadracmulopo/img/chadracmulopo-op-image.webp' },
     { name: 'og:image:width', content: '1089' },
     { name: 'og:image:height', content: '630' },
     { name: 'og:image:type', content: 'image/png' },
@@ -18,7 +18,7 @@ useHead({
     { name: 'twitter:card', content: 'summary' },
     { name: 'twitter:title', content: 'Chadrac Mulopo – Motion Designer' },
     { name: 'twitter:description', content: 'Explore e descubra narrativas visuais envolventes e inovadoras que elevam marcas a novas alturas. Chadrac Mulopo, Motion Designer.' },
-    { name: 'twitter:image', content: 'https://static1storage.s3.eu-west-2.amazonaws.com/vbox/chadracmulopo/chadrac-mulopo-motion-designer.sm.png' },
+    { name: 'twitter:image', content: 'https://s3.eu-west-2.amazonaws.com/s3.box/antonioyosica/chadracmulopo/img/chadracmulopo-op-image.webp' },
     { name: 'twitter:image:alt', content: 'Chadrac Mulopo – Motion Designer' },
   ],
   link: [
@@ -82,7 +82,7 @@ main .container-fluid .about a:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/img/chadrac-mulopo-xs.webp");
+  background-image: url("https://s3.eu-west-2.amazonaws.com/s3.box/antonioyosica/chadracmulopo/img/chadrac-mulopo-xs.webp");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 135%;
@@ -171,7 +171,7 @@ main .container-fluid a:hover{
     margin-left: 30px!important;
   }
   main .container-fluid .about a:before {
-    background-image: url("../assets/img/chadrac-mulopo-xs.webp");
+    background-image: url("https://s3.eu-west-2.amazonaws.com/s3.box/antonioyosica/chadracmulopo/img/chadrac-mulopo-xs.webp");
     background-position: center;
     background-size: cover;
   }

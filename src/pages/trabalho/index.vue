@@ -84,7 +84,25 @@ import { vueVimeoPlayer } from 'vue-vimeo-player'
 .gallery-item {
   margin-top: 30px !important;
 }
+.gallery-item {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+.gallery-item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 991px) {
 
+}
 /* .video-gallery .gallery-item img {
   position: relative;
   display: block;
