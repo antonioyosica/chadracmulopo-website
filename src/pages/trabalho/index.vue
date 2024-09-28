@@ -31,7 +31,6 @@ useHead({
     class: 'works'
   }
 })
-import { vueVimeoPlayer } from 'vue-vimeo-player'
 </script>
 
 <template>
@@ -43,35 +42,94 @@ import { vueVimeoPlayer } from 'vue-vimeo-player'
             <h1 class="mb-4">Animações que Contam Histórias</h1>
             <p>Explore meu portfólio e veja como transformei desafios em oportunidades, incorporando movimento e criatividade para contar histórias memoráveis. Se você procura uma abordagem única para elevar sua marca, você está no lugar certo.</p>
           </div>
-            <div class="row p-4 pt-0">
-              <div class="col-lg-6 gallery-item">
-                <vue-vimeo-player
-                    video-id="841939862" player-height="315"
-                />
-              </div>
+            <div class="row p-0">
+              <div class="p-0" style="height: 100%;/* overflow: hidden; */text-align: center">
+                <div class="csslider infinity" id="slider1">
+                  <input type="radio" name="slides" checked="checked" id="slide1"/>
+                  <input type="radio" name="slides" id="slide2"/>
+                  <input type="radio" name="slides" id="slide3"/>
+                  <input type="radio" name="slides" id="slide4"/>
+                  <input type="radio" name="slides" id="slide5"/>
+                  <ul>
+                    <li>
+                      <iframe
+                          src="//player.vimeo.com/video/841939862"
+                          width="100%"
+                          height="401px"
+                          frameborder="0"
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowfullscreen
+                          allow="autoplay; encrypted-media"></iframe>
+                    </li>
 
-              <div class="col-lg-6 gallery-item">
-                <vue-vimeo-player
-                    video-id="841936147" player-height="315"
-                />
-              </div>
+                    <li>
+                      <iframe
+                          src="//player.vimeo.com/video/841936147"
+                          width="100%"
+                          height="401px"
+                          frameborder="0"
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowfullscreen
+                          allow="autoplay; encrypted-media"></iframe>
+                    </li>
 
-              <div class="col-lg-6 gallery-item">
-                <vue-vimeo-player
-                    video-id="948632583" player-height="315"
-                />
-              </div>
+                    <li>
+                      <iframe
+                          src="//player.vimeo.com/video/948632583"
+                          width="100%"
+                          height="401px"
+                          frameborder="0"
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowfullscreen
+                          allow="autoplay; encrypted-media"></iframe>
+                    </li>
 
-              <div class="col-lg-6 gallery-item">
-                <vue-vimeo-player
-                    video-id="874378755" player-height="315"
-                />
-              </div>
+                    <li>
+                      <iframe
+                          src="//player.vimeo.com/video/874378755"
+                          width="100%"
+                          height="401px"
+                          frameborder="0"
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowfullscreen
+                          allow="autoplay; encrypted-media"></iframe>
+                    </li>
 
-              <div class="col-lg-6 gallery-item">
-                <vue-vimeo-player
-                    video-id="841943403" player-height="315"
-                />
+                    <li>
+                      <iframe
+                          src="//player.vimeo.com/video/841943403"
+                          width="100%"
+                          height="401px"
+                          frameborder="0"
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowfullscreen
+                          allow="autoplay; encrypted-media"></iframe>
+                    </li>
+                  </ul>
+                  <div class="arrows">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label class="goto-first" for="slide1"></label>
+                    <label class="goto-last" for="slide5"></label>
+                  </div>
+                  <div class="navigation">
+                    <div>
+                      <label for="slide1"></label>
+                      <label for="slide2"></label>
+                      <label for="slide3"></label>
+                      <label for="slide4"></label>
+                      <label for="slide5"></label>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
@@ -81,129 +139,287 @@ import { vueVimeoPlayer } from 'vue-vimeo-player'
 </template>
 
 <style scoped>
-.gallery-item {
-  margin-top: 30px !important;
-}
-.gallery-item {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-}
-.gallery-item iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 @media (max-width: 991px) {
-
+  iframe {
+    height: 171px !important;
+  }
+  .csslider > ul {
+    margin: 0 !important;
+    width: 100% !important;
+    height: 175px !important;
+  }
+  #slider1 {
+    margin: 0 !important;
+  }
+  .csslider > .arrows {
+    left: -15px !important;
+    width: 96% !important;
+    height: 32px !important;
+    padding: 0 21px !important;
+  }
 }
-/* .video-gallery .gallery-item img {
+
+.csslider {
+  -moz-perspective: 1300px;
+  -ms-perspective: 1300px;
+  -webkit-perspective: 1300px;
+  perspective: 1300px;
+  display: inline-block;
+  text-align: left;
   position: relative;
-  display: block;
-  width: 115%;
-  height: 300px;
-  object-fit: cover;
-  opacity: .5;
-  transition: opacity .35s, transform .35s;
-  transition: all 350ms ease-in-out;
-  transform: translate3d(-23px, 0, 0);
-  backface-visibility: hidden;
+  margin-bottom: 22px;
 }
-
-.north-cascades-img {
-  object-position: 50% 30%;
+.csslider > input {
+  display: none;
 }
-
-.video-gallery .gallery-item .gallery-item-caption {
-  padding: 32px;
-  font-size: 1em;
-  color: #fff;
-  text-transform: uppercase;
+.csslider > input:nth-of-type(10):checked ~ ul li:first-of-type {
+  margin-left: -900%;
 }
-
-.video-gallery .gallery-item .gallery-item-caption,
-.video-gallery .gallery-item .gallery-item-caption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
+.csslider > input:nth-of-type(9):checked ~ ul li:first-of-type {
+  margin-left: -800%;
+}
+.csslider > input:nth-of-type(8):checked ~ ul li:first-of-type {
+  margin-left: -700%;
+}
+.csslider > input:nth-of-type(7):checked ~ ul li:first-of-type {
+  margin-left: -600%;
+}
+.csslider > input:nth-of-type(6):checked ~ ul li:first-of-type {
+  margin-left: -500%;
+}
+.csslider > input:nth-of-type(5):checked ~ ul li:first-of-type {
+  margin-left: -400%;
+}
+.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+  margin-left: -300%;
+}
+.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+  margin-left: -200%;
+}
+.csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+  margin-left: -100%;
+}
+.csslider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+  margin-left: 0%;
+}
+.csslider > ul {
+  position: relative;
+  width: 820px;
+  height: 420px;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.csslider > ul > li {
+  position: relative;
+  display: inline-block;
   width: 100%;
   height: 100%;
-}
-
-.video-gallery .gallery-item h2 {
-  font-weight: 300;
   overflow: hidden;
-  padding: 12px 0;
+  font-size: 15px;
+  font-size: initial;
+  line-height: normal;
+  -moz-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: normal;
 }
-
-.video-gallery .gallery-item h2,
-.video-gallery .gallery-item p {
-  position: relative;
-  margin: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.video-gallery .gallery-item p {
-  letter-spacing: 1px;
-  font-size: 12px;
-  padding: 12px 0;
-  opacity: 0;
-  transition: opacity 0.35s, transform 0.35s;
-  transform: translate3d(10%, 0, 0);
-}
-
-.video-gallery .gallery-item:hover img {
-  opacity: 0.3;
-  transform: translate3d(0, 0, 0);
-}
-
-.video-gallery .gallery-item .gallery-item-caption {
-  text-align: left;
-}
-
-.video-gallery .gallery-item h2::after {
-  content: "";
+.csslider > .navigation {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 15%;
-  height: 1px;
-  background: #fff;
-  transition: transform 0.3s;
-  transform: translate3d(-100%, 0, 0);
+  bottom: -8px;
+  left: 50%;
+  z-index: 10;
+  margin-bottom: -10px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
-.video-gallery .gallery-item:hover h2::after {
-  transform: translate3d(0, 0, 0);
+.csslider > .navigation > div {
+  margin-left: -100%;
 }
-
-.video-gallery .gallery-item:hover p {
+.csslider > .navigation label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 4px;
+  padding: 4px;
+  background: #3A3A3A;
+}
+.csslider > .navigation label:hover:after {
   opacity: 1;
-  transform: translate3d(0, 0, 0);
+}
+.csslider > .navigation label:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  background: #8950f1;
+  border-radius: 50%;
+  padding: 6px;
+  opacity: 0;
+}
+.csslider > .arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.csslider.inside .navigation {
+  bottom: 10px;
+  margin-bottom: 10px;
+}
+.csslider > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1):after,
+.csslider > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2):after,
+.csslider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3):after,
+.csslider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4):after,
+.csslider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5):after,
+.csslider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6):after,
+.csslider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7):after,
+.csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8):after,
+.csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after,
+.csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after,
+.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after {
+  opacity: 1;
+}
+.csslider > .arrows {
+  position: absolute;
+  left: -31px;
+  top: 50%;
+  width: 100%;
+  height: 26px;
+  padding: 0 31px;
+  z-index: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.csslider > .arrows label {
+  display: none;
+  position: absolute;
+  top: -50%;
+  padding: 13px;
+  box-shadow: inset 2px -2px 0 1px #3A3A3A;
+  cursor: pointer;
+  -moz-transition: box-shadow 0.15s, margin 0.15s;
+  -o-transition: box-shadow 0.15s, margin 0.15s;
+  -webkit-transition: box-shadow 0.15s, margin 0.15s;
+  transition: box-shadow 0.15s, margin 0.15s;
+}
+.csslider > .arrows label {
+  box-shadow: inset 3px -3px 0 2px #A6A6A6;
+  margin: 0 0px;
+}
+.csslider > .arrows label:hover {
+  box-shadow: inset 3px -3px 0 2px #8950f1;
+  margin: 0 0px;
+}
+.csslider > .arrows label:before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 300%;
+  width: 300%;
+}
+.csslider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+  display: block;
+  left: 0;
+  right: auto;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.csslider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+  display: block;
+  right: 0;
+  left: auto;
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+ul {
+  padding-left: 40px;
 }
 
-@media screen and (max-width: 784px) {
-  .video-gallery {
-    width: 100%;
-    padding: 15px;
-
-  }
-  .video-gallery .gallery-item {
-    width: 95%;
-    margin: 0 auto;
-    width: 100%;
-  }
+#slider1 {
+  margin: 20px;
 }
-*/
-
-.vp-center {
-  justify-content: flex-start !important;
+#slider1 > input:nth-of-type(3):checked ~ ul #bg {
+  width: 80%;
+  padding: 22px;
+  -moz-transition: .5s .5s;
+  -o-transition: .5s .5s;
+  -webkit-transition: .5s .5s;
+  transition: .5s .5s;
+}
+#slider1 > input:nth-of-type(3):checked ~ ul #bg div {
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  -moz-transition: .5s .9s;
+  -o-transition: .5s .9s;
+  -webkit-transition: .5s .9s;
+  transition: .5s .9s;
+}
+video {
+  width:100%;
+  height:400px;
+  background:transparent url('') no-repeat 0 0;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
 }
 </style>
